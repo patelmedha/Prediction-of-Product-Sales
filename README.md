@@ -91,7 +91,7 @@ Below is a scatterplot showing the Impact of Item MRP on Item Outlet Sales.
 ### Interpreting Coefficients
 - To understand the impact of features on machine learning models, coefficients are extracted and visualized. These coefficients represent the weights assigned to each feature and provide insights into their influence on predictions. Positive coefficients suggest an increase in a feature leads to a higher prediction, while negative coefficients imply the opposite. Visualization techniques such as bar plots help identify which features have the most significant impact, aiding in model interpretation and feature selection.
 
-![](plot_linreg_coefficients.png)
+![](Images/plot_linreg_coefficients.png)
 
 - Interpreting the Top 3 impactful features and their coefficients
     - `Outlet_Type_Supermarket Type3` feature has a significant positive impact. A Tier 3 outlet will produce 675 revenue for it's outlet. This could mean that having an outlet in a tier 3 location is associated with higher sales and profits.
@@ -101,7 +101,7 @@ Below is a scatterplot showing the Impact of Item MRP on Item Outlet Sales.
 ### Interpreting Feature Importances 
 - Feature importances in machine learning quantify the significance of each input variable (feature) in making predictions. They help identify which features have the most influence on the model's output. These importances are typically calculated using techniques like tree-based models (e.g., Random Forest) or gradient boosting. High feature importance indicates a strong contribution to predictions, making it valuable for feature selection, model debugging, and understanding the underlying patterns in the data.
 
-![](plot_rf_important_features.png)
+![](Images/plot_rf_important_features.png)
 
 Features with higher importances have a more significant impact on the model's predictions.
 - The top 5 most important features for this model are:
@@ -114,11 +114,15 @@ Features with higher importances have a more significant impact on the model's p
 ## Visualizations
 
 ### Summary Bar Plot (plot_type='bar')
-![](Images/Random Forest Regression SHAP - Summary Plot_bar.png)
+
+![](Images/rf_regression_summaryplot_bar.png)
+
 - The comparison between the key features identified by Shap and the traditional feature importance methods reveals a noteworthy overlap. Both Random Forest Regressor and Shap concur on the significance of `Item_MRP` and `Outlet_Type_Grocery Store`. However, there are some distinctions; while Random Forest Regressor highlights `Item_Visibility`, Shap's model prioritizes `Outlet_Identifier_OUT027`. These disparities may be attributed to the randomization process employed in the Shap model.
 
 ### Summary Dot Plot (plot_type='dot')
-![Random Forest Regression SHAP](Images/Random Forest Regression SHAP- Summary Plot_dot.png)
+
+![](Images/rf_regression_summaryplot_dot.png)
+
 - Top 3 Features Explained:
     1) `Item_MRP`: The presence of red dots signifies a notably positive SHAP value, suggesting that as the Maximum Retail Price (MRP) of an item rises, the model's predictions for outlet sales also exhibit an upward trend. In other words, higher MRP values correlate with increased sales predictions in the Random Forest model.
     2) `Outlet_Type_Grocery_Store`: Conversely, a strongly negative SHAP value for this feature indicates that when products are sold in "Grocery Store" type outlets, the model anticipates lower sales. Items sold in grocery store outlets appear to have an adverse effect on sales predictions, potentially due to factors such as limited product variety or reduced foot traffic.
@@ -126,6 +130,7 @@ Features with higher importances have a more significant impact on the model's p
     
 ### LIME Tabular Plot
 - The LIME Tabular Plot is a visualization tool used in explainable machine learning to understand model predictions. It displays the impact of individual features on a particular prediction made by a machine learning model. Each horizontal bar in the plot represents a feature, and its length indicates the magnitude of its influence on the prediction. Positive contributions are displayed on the right side of the plot, while negative contributions are on the left. By examining this plot, users can gain insights into why a specific prediction was made, helping to interpret and trust the model's decision-making process. The Lime Tabular Plot is valuable for model transparency and debugging in complex machine learning applications.
+
 ![](Images/lime_plot.png)
 
 - This LIME plot illustrates how each feature impacts the prediction for this specific data sample. In the case of this sample, its individual features contribute positively to the prediction, leading to a favorable outcome.
