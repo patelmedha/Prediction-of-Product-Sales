@@ -162,6 +162,7 @@ Features with higher importances have a more significant impact on the model's p
 If you have any questions, feel free to reach out to:
 
 **Medha Patel** (Data Scientist)
-    E-mail: ![patelmedzy@gmail.com]
+
+E-mail: patelmedzy@gmail.com
 
     
