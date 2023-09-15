@@ -6,7 +6,7 @@
 
 # Inspecting Outlet Features to Predict Sales
 
-Our aim is to assist retailers in comprehending the characteristics of both products and outlets that significantly impact sales growth. Our specific objective is to boost the sales of individual items in each outlet. To achieve this, I analyze the attributes that have a significant influence on outlet sales.
+This project aims to help retailers understand the properties of their products and outlets that play crucial roles in increasing sales. Using data analysis and machine learning techniques, the project will identify the most significant factors that influence sales performance and explore segmentation strategies to group similar products and outlets together. The goal is to provide retailers with a comprehensive understanding of their sales data and enable them to make data-driven decisions that increase revenue, improve customer satisfaction, and drive long-term success. An interactive dashboard will allow retailers to visualize and explore the data, experiment with input parameters, and generate custom reports.
 
 ## Data Source: [sales_predictions_2023.csv](https://drive.google.com/file/d/1syH81TVrbBsdymLT_jl2JIf6IjPXtSQw/view)
 
@@ -26,4 +26,4 @@ Our aim is to assist retailers in comprehending the characteristics of both prod
 
  In order to get the data ready for analysis, we underwent a data cleaning process and executed the following tasks:
 ## Exploratory Data Analysis (EDA):
-![](Images/Item Outlet Sales.png)
+![Bar Plot for Item Outlet Sale](Images/Item_Outlet_Sales.png)
