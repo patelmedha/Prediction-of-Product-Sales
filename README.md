@@ -118,7 +118,7 @@ Features with higher importances have a more significant impact on the model's p
 - The comparison between the key features identified by Shap and the traditional feature importance methods reveals a noteworthy overlap. Both Random Forest Regressor and Shap concur on the significance of `Item_MRP` and `Outlet_Type_Grocery Store`. However, there are some distinctions; while Random Forest Regressor highlights `Item_Visibility`, Shap's model prioritizes `Outlet_Identifier_OUT027`. These disparities may be attributed to the randomization process employed in the Shap model.
 
 ### Summary Dot Plot (plot_type='dot')
-![](Images/Random Forest Regression SHAP- Summary Plot_dot.png)
+![Random Forest Regression SHAP](Images/Random Forest Regression SHAP- Summary Plot_dot.png)
 - Top 3 Features Explained:
     1) `Item_MRP`: The presence of red dots signifies a notably positive SHAP value, suggesting that as the Maximum Retail Price (MRP) of an item rises, the model's predictions for outlet sales also exhibit an upward trend. In other words, higher MRP values correlate with increased sales predictions in the Random Forest model.
     2) `Outlet_Type_Grocery_Store`: Conversely, a strongly negative SHAP value for this feature indicates that when products are sold in "Grocery Store" type outlets, the model anticipates lower sales. Items sold in grocery store outlets appear to have an adverse effect on sales predictions, potentially due to factors such as limited product variety or reduced foot traffic.
